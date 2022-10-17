@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HMZ.App.Views;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,19 @@ namespace HMZ.App
         public HMZ_AppMain()
         {
             InitializeComponent();
+        }
+
+        private void HMZ_AppMain_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnQuanLyVatTu_Click(object sender, EventArgs e)
+        {
+            ItemViewForm itemViewForm = new ItemViewForm();
+            itemViewForm.Dock = DockStyle.Fill;
+            panelMain.Controls.Clear();
+            panelMain.Controls.Add(itemViewForm);
         }
     }
 }

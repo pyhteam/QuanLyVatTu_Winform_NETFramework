@@ -28,20 +28,90 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.btnQuanLyVatTu = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
+            this.panelMain = new System.Windows.Forms.Panel();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.panel1.Controls.Add(this.btnExit);
+            this.panel1.Controls.Add(this.btnQuanLyVatTu);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(207, 647);
+            this.panel1.TabIndex = 0;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.SystemColors.GrayText;
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(207, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(922, 47);
+            this.panel2.TabIndex = 1;
+            // 
+            // btnQuanLyVatTu
+            // 
+            this.btnQuanLyVatTu.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.btnQuanLyVatTu.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnQuanLyVatTu.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnQuanLyVatTu.Location = new System.Drawing.Point(3, 70);
+            this.btnQuanLyVatTu.Name = "btnQuanLyVatTu";
+            this.btnQuanLyVatTu.Size = new System.Drawing.Size(201, 38);
+            this.btnQuanLyVatTu.TabIndex = 0;
+            this.btnQuanLyVatTu.Text = "Quan Ly Vat Tu";
+            this.btnQuanLyVatTu.UseVisualStyleBackColor = false;
+            this.btnQuanLyVatTu.Click += new System.EventHandler(this.btnQuanLyVatTu_Click);
+            // 
+            // btnExit
+            // 
+            this.btnExit.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.btnExit.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnExit.Location = new System.Drawing.Point(3, 597);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(201, 38);
+            this.btnExit.TabIndex = 0;
+            this.btnExit.Text = "Exit";
+            this.btnExit.UseVisualStyleBackColor = false;
+            // 
+            // panelMain
+            // 
+            this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelMain.Location = new System.Drawing.Point(207, 47);
+            this.panelMain.Name = "panelMain";
+            this.panelMain.Size = new System.Drawing.Size(922, 600);
+            this.panelMain.TabIndex = 2;
             // 
             // HMZ_AppMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(950, 555);
+            this.ClientSize = new System.Drawing.Size(1129, 647);
+            this.Controls.Add(this.panelMain);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
             this.Name = "HMZ_AppMain";
             this.Text = "Quan Ly Vat Tu";
+            this.Load += new System.EventHandler(this.HMZ_AppMain_Load);
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Button btnQuanLyVatTu;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panelMain;
     }
 }
 
