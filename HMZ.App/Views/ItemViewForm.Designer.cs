@@ -43,6 +43,9 @@
             this.txtId = new System.Windows.Forms.TextBox();
             this.txtLocation = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.txtTimKiem = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.btnSearch = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.gvListItem)).BeginInit();
             this.SuspendLayout();
             // 
@@ -193,22 +196,53 @@
             this.label5.TabIndex = 2;
             this.label5.Text = "Vị trí để";
             // 
+            // txtTimKiem
+            // 
+            this.txtTimKiem.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTimKiem.Location = new System.Drawing.Point(330, 105);
+            this.txtTimKiem.Name = "txtTimKiem";
+            this.txtTimKiem.Size = new System.Drawing.Size(434, 25);
+            this.txtTimKiem.TabIndex = 1;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(269, 108);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(60, 17);
+            this.label6.TabIndex = 2;
+            this.label6.Text = "Tìm kiếm";
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.Location = new System.Drawing.Point(770, 101);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(94, 33);
+            this.btnSearch.TabIndex = 5;
+            this.btnSearch.Text = "Serach";
+            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            // 
             // ItemViewForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnEdit);
+            this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.rtbDescription);
             this.Controls.Add(this.cbbCategory);
             this.Controls.Add(this.label5);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtLocation);
             this.Controls.Add(this.txtId);
+            this.Controls.Add(this.txtTimKiem);
             this.Controls.Add(this.txtImageUrl);
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.gvListItem);
@@ -238,5 +272,8 @@
         private System.Windows.Forms.TextBox txtId;
         private System.Windows.Forms.TextBox txtLocation;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtTimKiem;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button btnSearch;
     }
 }

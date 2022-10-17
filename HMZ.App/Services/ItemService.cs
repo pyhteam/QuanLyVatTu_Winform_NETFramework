@@ -50,9 +50,9 @@ namespace HMZ.App.Services
             return _context.SaveChanges();
         }
         //  search by name 
-        public Item GetItemByName(string name)
+        public List<Item> GetItemByName(string name)
         {
-            return _context.Items.FirstOrDefault(i => i.Name == name);
+            return _context.Items.Where(i => i.Name == default || i.Name.Contains(name)).ToList();
         }
     }
 

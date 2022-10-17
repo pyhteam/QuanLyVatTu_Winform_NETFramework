@@ -130,5 +130,22 @@ namespace HMZ.App.Views
                 MessageBox.Show("Delete item failed");
             }
         }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            string name = txtTimKiem.Text;
+            List<Item> items = itemService.GetItemByName(name);
+            if (items.Count > 0)
+            {
+                gvListItem.DataSource = null;
+                gvListItem.DataSource = items;
+            }
+            else
+            {
+                MessageBox.Show("Not data");
+            }
+
+
+        }
     }
 }
